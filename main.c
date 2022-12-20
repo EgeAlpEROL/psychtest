@@ -23,7 +23,7 @@ int main(void)
     sor[j]           = sor[randomIndex];
     sor[randomIndex] = temp;
     }
-    printf("\n\n\n\t\t\t\t\t***BES BUYUK KIŞILIK TESTINE HOSGELDINIZ***\n");
+    printf("\n\n\n\t\t\t\t\t***BES BUYUK KISILIK TESTINE HOSGELDINIZ***\n");
     printf("\n\t\t\t***********************************************************************\n");
     printf("\n\t\t\t***ONCELIKLE BIRAZ BILGI VERMEKTE FAYDA VAR TEST 15 SORUDAN OLUSUYOR***\n");
     printf("\n\t\t\t***********************************************************************\n");
