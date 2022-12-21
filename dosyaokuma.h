@@ -41,7 +41,8 @@ void soruOkuma(int aranansayi) // Istenen soru nosunu verince soruyu yazdirir
 
 void sonucYaz(char *isim, int aciklik, int sorumluluk, int disadonukluk, int uyumluluk, int duygusaldenge)
 {
-    printf("\t\t\tSonuclar\n\t\t\tAciklik: %d/6\n\t\t\tSorumluluk: %d/6\n\t\t\tUyumluluk: %d/6\n\t\t\tDisa donukluk: %d/6\n\t\t\tDuygusal denge: %d/6\n",aciklik,sorumluluk,disadonukluk,uyumluluk,duygusaldenge);
+    printf("\t\t\tKullanici: %s", isim);
+    printf("\n\t\t\tSonuclar\n\t\t\tAciklik: %d/6\n\t\t\tSorumluluk: %d/6\n\t\t\tUyumluluk: %d/6\n\t\t\tDisa donukluk: %d/6\n\t\t\tDuygusal denge: %d/6\n",aciklik,sorumluluk,disadonukluk,uyumluluk,duygusaldenge);
     if(aciklik>=0 && aciklik<3){
         printf("\n\t\t\t***********************************************************************\n");
         printf("\n\t\t\tDusuk aciklik duzeyindeki kisiler daha gercekci ve gelenekseldir.\n\t\t\tAciklik duzeyi dusuk insanlar muhasebede polislik ve satis alaninda daha avantajlidir.\n");
