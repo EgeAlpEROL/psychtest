@@ -17,11 +17,11 @@ int main(void)
     for (int j = 0; j < 15; j++)
     {   
     
-    int temp = sor[j];
+    int gecici = sor[j];
     int rastgele = rand() % 15;
 
     sor[j] = sor[rastgele];
-    sor[rastgele] = temp;
+    sor[rastgele] = gecici;
     }
     printf("\n\n\n\t\t\t\t\t***BES BUYUK KISILIK TESTINE HOSGELDINIZ***\n");
     printf("\n\t\t\t***********************************************************************\n");
