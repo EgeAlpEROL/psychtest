@@ -17,11 +17,8 @@ void soruOkuma(int aranansayi) // Istenen soru nosunu verince soruyu yazdirir
         status = fscanf(dosya, "%c", &ch);
         if (isdigit(ch) && isdigit(lastch)) //Her iki karakter de sayiysa donuştur.
         {
-            ch -= '0';     // Dosyadan okunan değerler ASCII Karakteri olduğu için
-            lastch -= '0'; // '0' Karakterinin değerinden çikartarak gerçek Sayiya donuşturuyoruz.
-            sayi = lastch*10 + ch*1; //dosyadan alinan iki sayiyi bir onluk değere donuştur.
-            ch += '0';
-            // Bir sonraki dongude sikinti olmamasi için Tekrar ASCII'ya donuştur.
+            char num[] = {lastch, ch, '\0'}; //Son iki karakteri Bir stringe at
+            sayi = atoi(num);
         }
         if (status == EOF) //Sayi bulunamadan dosya sonu (EOF) varsa hata yazdir
         {
