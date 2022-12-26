@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <stdlib.h>
 
 void soruOkuma(int aranansayi) // Istenen soru nosunu verince soruyu yazdirir
 {
